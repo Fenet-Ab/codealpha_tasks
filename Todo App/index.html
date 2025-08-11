@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="todo-container">
+    <h1>My Daily Tasks</h1>
+
+    <section class="email-section">
+      <label for="userEmail">Register your email to get 1-day-before reminders:</label>
+      <div class="email-group">
+        <input type="email" id="userEmail" placeholder="you@example.com" />
+        <button id="saveEmailBtn" class="primary">Save Email</button>
+      </div>
+      <div id="emailStatus" class="muted"></div>
+    </section>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter new task..." />
+      <input type="date" id="dueDate" />
+      <input type="text" id="dueTime" placeholder="e.g., 7:30 pm" aria-label="Due time in 12-hour format" />
+      <div class="time-group">
+        <input type="number" id="plannedTime" min="0" step="0.5" placeholder="Time" />
+        <select id="timeUnit">
+          <option value="hours" selected>hrs</option>
+          <option value="minutes">min</option>
+        </select>
+      </div>
+      <button id="addTaskBtn" class="primary">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>
