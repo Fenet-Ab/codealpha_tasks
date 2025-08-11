@@ -1,6 +1,6 @@
 # Todo App with Email Reminders
 
-A feature-rich, responsive todo application with automatic email notifications, beautiful UI, and both client-side and server-side functionality.
+A feature-rich, responsive todo application with automatic email notifications, beautiful UI, and both client-side and server-side functionalit.
 
 ## ✨ Features
 
